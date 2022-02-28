@@ -1,0 +1,32 @@
+enum CategoryType {
+  Shirts
+  Jeans
+  Jackets
+  Sweaters
+  Accessories
+}
+
+type Product {
+  id: Int!
+  category: CategoryType!
+  productName: String!
+  price: String
+  image: String
+}
+
+input ProductInputs {
+  category: CategoryType = Shirts
+  productName: String
+  price: String
+  image: String
+}
+
+type Query {
+  about: String!
+  productList: [Product!]!
+}
+
+type Mutation {
+  setAboutMessage(message: String!): String
+  productAdd(product: ProductInputs!): Product!
+}

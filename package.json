@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/canorga8634/CS648-3#readme",
   "dependencies": {
-    "apollo-server-express": "^3.6.3",
+    "apollo-server-express": "2.21",
     "express": "^4.17.3",
-    "graphql": "^16.3.0",
+    "graphql": "^15.8.0",
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
